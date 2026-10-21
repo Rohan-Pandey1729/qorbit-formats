@@ -1,0 +1,54 @@
+{
+  "name": "qorbit-formats",
+  "version": "0.1.0",
+  "description": "Readers for hobby and student rocketry file formats: altimeter flight logs and OpenRocket design files.",
+  "license": "Apache-2.0",
+  "author": "Rohan Pandey",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rohan-Pandey1729/qorbit-formats.git"
+  },
+  "homepage": "https://github.com/Rohan-Pandey1729/qorbit-formats#readme",
+  "bugs": "https://github.com/Rohan-Pandey1729/qorbit-formats/issues",
+  "keywords": [
+    "rocketry",
+    "model-rocketry",
+    "altimeter",
+    "flight-data",
+    "openrocket",
+    "telemetry",
+    "tarc"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "LICENSE", "NOTICE", "README.md", "docs"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "papaparse": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/papaparse": "^5.5.2",
+    "@xmldom/xmldom": "^0.9.6",
+    "typescript": "^5.4.5",
+    "vitest": "^4.1.9"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
