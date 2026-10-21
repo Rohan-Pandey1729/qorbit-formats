@@ -1,6 +1,6 @@
 {
   "name": "qorbit-formats",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Readers for hobby and student rocketry file formats: altimeter flight logs and OpenRocket design files.",
   "license": "Apache-2.0",
   "author": "Rohan Pandey",
@@ -42,7 +42,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepublishOnly": "npm run build",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test:dist": "node scripts/smoke-dist.mjs"
   },
   "dependencies": {
     "fflate": "^0.8.3",

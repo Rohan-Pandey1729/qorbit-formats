@@ -9,13 +9,13 @@
 export {
   parseFlightCSV,
   summariseRows,
-} from './flight-parser'
+} from './flight-parser.js'
 export type {
   FlightRow,
   FlightSummary,
   ParsedFlight,
   StateTransition,
-} from './flight-parser'
+} from './flight-parser.js'
 
 // Third-party altimeter logs
 export {
@@ -23,16 +23,16 @@ export {
   importThirdPartyCSV,
   parseAnyFlightCSV,
   SOURCE_LABELS,
-} from './flight-import'
+} from './flight-import.js'
 export type {
   AltimeterSource,
   AnyParsedFlight,
   ImportedFlight,
-} from './flight-import'
+} from './flight-import.js'
 
 // Design files
-export { parseOrk, orkXmlFromArchive } from './openrocket'
-export type { ParsedOrk, ParseOrkOptions, XmlParser } from './openrocket'
+export { parseOrk, orkXmlFromArchive } from './openrocket.js'
+export type { ParsedOrk, ParseOrkOptions, XmlParser } from './openrocket.js'
 
 // Shared geometry types
 export type {
@@ -40,4 +40,4 @@ export type {
   NoseShape,
   RocketGeometry,
   StabilityResult,
-} from './geometry'
+} from './geometry.js'

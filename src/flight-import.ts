@@ -20,8 +20,8 @@
  */
 
 import Papa from 'papaparse'
-import { parseFlightCSV, summariseRows } from './flight-parser'
-import type { FlightRow, ParsedFlight } from './flight-parser'
+import { parseFlightCSV, summariseRows } from './flight-parser.js'
+import type { FlightRow, ParsedFlight } from './flight-parser.js'
 
 export type AltimeterSource =
   | 'qorbit'

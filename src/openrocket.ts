@@ -1,5 +1,5 @@
 import { unzipSync, strFromU8 } from 'fflate'
-import type { RocketGeometry, NoseShape } from './geometry'
+import type { RocketGeometry, NoseShape } from './geometry.js'
 
 /**
  * Parser for OpenRocket `.ork` design files.
