@@ -28,14 +28,21 @@
       "default": "./dist/index.js"
     }
   },
-  "files": ["dist", "LICENSE", "NOTICE", "README.md", "docs"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "docs"
+  ],
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "fflate": "^0.8.3",
